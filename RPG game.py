@@ -19,7 +19,8 @@ def showStatus():
     #print the current inventory
     print('Inventory : ' +str(inventory))
     #print an item if there is one
-    if "item" in rooms[currentRoom]['item']
+    if "item" in rooms[currentRoom]:
+        print('You see a ' + rooms[currentRoom]['item'])
         print("-------------------------")
 
 #an inventory, which is initially empty
@@ -28,8 +29,8 @@ inventory = []
 ## A dictionary linking a room to other rooms
 rooms = {
     'Hall' : {
-        'souuth' : 'Kitchen'
-    }
+        'south' : 'Kitchen'
+    },
     'Kitchen' : {
         'north' : 'Hall'
         }
@@ -54,7 +55,7 @@ while True:
 
     # split allows an items to have a space on them
     # get golden key is returned ["get", "golden key"]
-    move = move.lower().split("",1)
+    move = move.lower().split(" ",1)
 
     #if they type 'go' first
     if move[0] == 'go':
@@ -62,6 +63,7 @@ while True:
         if move[1] in rooms[currentRoom]:
             #set the current room to the new room
         #there is no door (link) to the new room
+            currentRoom = rooms[currentRoom][move[1]]
         else:
             print('You cant\'t go that way!')
 
@@ -74,7 +76,7 @@ while True:
             #display a helpful message  print(move[1]]
             print(move[1] + 'got!')
             #delete the item from the room
-            del rooms[currentRoom]['item:]
+            del rooms[currentRoom]['item']
 
          #otherwise if the item isnt there to get
         else:
