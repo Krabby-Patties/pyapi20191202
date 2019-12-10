@@ -1,0 +1,6 @@
+{"Karts": [{"name":"StandardKart", "speed":0},
+            {"name":"BiddyBuggy","speed":-0.75},
+            {"name":"Mach8", "speed":0.5},
+            {"name":"SportsCoupe", "speed":0.5},
+           ]
+ }

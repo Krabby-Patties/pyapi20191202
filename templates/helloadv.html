@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Example Hello w0rld</title>
+</head>
+<body>
+    <p>This is a Jinja template</p>
+    <p>case and point, hello {{ joevar }}</p>
+     {% for instructor_name in names %}
+        <p>TLG instructor {{ instructor_name }}</p>
+
+    {% if jt < 12 %}
+    good morning
+    {% elif jt < 18 %}
+    good afternoon
+    {% else %}
+    Good night
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "Baby Mario": {
+    "type": "Light",
+    "name": "Baby Mario",
+    "speed": {
+      "value": 2.25
+    },
+    "acceleration": 3.25,
+    "weight": 2.25
+  },
+  "Baby Luigi": {
+    "type": "Light",
+    "name": "Baby Luigi",
+    "speed": {
+      "value": 2.25
+    },
+    "acceleration": 3.25,
+    "weight": 2.25
+  }
+}

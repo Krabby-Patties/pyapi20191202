@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Example Hello world</title>
+</head>
+<body>
+    <p>Good morning, everybody</p>
+    {% for instructor_name in names %}
+        <p>TLG instructor {{ instructor_name }}</p>
+    {% endfor %}
+
+    {% if name == 'Jose' %}
+        <p>Hello {{ name }}!</p>
+    {% endif %}
+</body>
+</html>
